@@ -51,4 +51,4 @@ EXPOSE 3000
 
 ENTRYPOINT ["dumb-init", "--"]
 
-CMD ["pnpm", "start"]
+CMD ["pnpm", "exec", "next", "start", "-H", "0.0.0.0", "-p", "3000"]
