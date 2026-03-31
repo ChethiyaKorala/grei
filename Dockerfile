@@ -32,8 +32,6 @@ ENV PORT=3000
 # Enable pnpm
 RUN corepack enable
 
-
-
 # Copy built application and dependencies from builder
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/.next ./.next
