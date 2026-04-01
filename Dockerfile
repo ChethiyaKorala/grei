@@ -12,6 +12,7 @@ COPY . .
 RUN pnpm build
 
 # Production stage
+
 FROM node:20-alpine AS runner
 
 WORKDIR /app
